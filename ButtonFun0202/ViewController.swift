@@ -15,6 +15,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    @IBOutlet weak var labNa: UILabel!
+    @IBAction func btnLeft(_ sender: Any) {
+        labNa.text = "Left Button Pressed"
+    }
+    
+    @IBAction func btnRight(_ sender: Any) {
+        labNa.text = "Right Button Pressed"
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
